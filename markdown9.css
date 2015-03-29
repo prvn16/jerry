@@ -122,10 +122,10 @@ sup {
 * {
 	 -webkit-print-color-adjust: exact;
 }
-@media screen and (min-width: 914px) {
+@media screen and (min-width: 768px) {
    body {
-      width: 854px;
-      margin:10px auto;
+      width: 750px;
+      margin:30px;
    }
 }
 @media print {
