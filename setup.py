@@ -1,15 +1,15 @@
-from distutils.core import setup
-from glob import glob
-import py2exe
+"""
 
-data_files = [("Microsoft.VC90.CRT", glob(r'C:\Program Files\Microsoft Visual Studio 9.0\VC\redist\x86\Microsoft.VC90.CRT\*.*'))]
+"""
+
+from setuptools import setup
+
+APP = ['jerry.py']
+DATA_FILES = []
+OPTIONS = {'argv_emulation': False, 'iconfile': 'MyIcon.icns'}
 
 setup(
-    data_files=data_files,
-    windows = [
-        {
-            "script": "jerry.py",
-            "icon_resources": [(1, "win_icon.ico")]
-        }
-    ],
+    app=APP,
+    name='Jerry',
+    data_files=DATA_FILES,
 )
